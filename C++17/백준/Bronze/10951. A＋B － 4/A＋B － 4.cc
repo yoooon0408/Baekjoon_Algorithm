@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main(){
-    int a, b, res;
+    int a, b;
     while(1){
-        res=scanf("%d %d", &a, &b);
-            if(res==-1){
-                break;
-            }
-        printf("%d\n",a+b);
+        if(scanf("%d %d", &a, &b)!=EOF){
+            printf("%d\n", a+b);
         }
+        else{
+            break;
+        }
+    }
     
     return 0;
 }
